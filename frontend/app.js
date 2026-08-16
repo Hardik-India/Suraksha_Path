@@ -1,4 +1,4 @@
-const API_BASE = "surakshapath-production.up.railway.app";
+const API_BASE = "https://surakshapath-production.up.railway.app";
 const map = L.map('map', { zoomControl: true }).setView([22.5726, 88.3639], 15);
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
