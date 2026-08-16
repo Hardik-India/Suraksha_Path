@@ -7,3 +7,4 @@ scipy
 joblib
 folium
 sumolib
+gunicorn
