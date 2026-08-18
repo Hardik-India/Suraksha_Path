@@ -104,7 +104,7 @@ def recommend_best_intervention(node_id):
         narrative = (
             f"Based on simulated scenarios, {intervention_labels[best['intervention']]} is predicted to "
             f"reduce conflicts by approximately {abs(best['estimated_change']):.0f} "
-            f"(from {best['baseline_conflicts']} to ~{best['predicted_conflicts_after']}), "
+            f"(from {best['baseline_conflicts']} to ~{max(0, best['predicted_conflicts_after'])}), "
             f"with {int(best['confidence']*100)}% model confidence. "
             f"This is the most effective single intervention modeled for this junction."
         )
