@@ -289,7 +289,7 @@ function renderResult(result) {
       <div class="result-headline">${icons[effect]} Conflicts likely to ${words[effect]}</div>
       <div class="result-detail">
         Estimated change: ${sign}${changeNum} conflicts<br>
-        Baseline: ${result.baseline_conflicts} &rarr; Predicted: ~${result.predicted_conflicts_after}
+        Baseline: ${result.baseline_conflicts} &rarr; Predicted: ~${Math.max(result.predicted_conflicts_after, 0)}
       </div>
       <div class="confidence-wrap">
         <div class="confidence-label">Confidence: ${confPct}%</div>
